@@ -8,6 +8,9 @@ import java.nio.file.Paths;
 import java.sql.Connection;
 import java.util.Properties;
 
+/**
+ * @author Lee-win10
+ */
 public class DruidDemo1 {
     public static void main(String[] args) throws Exception {
         // 1.导入jar包
