@@ -14,9 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-/*
-    商品品牌数据的增删改查
+/**
+ * @author Lee-win10
  */
+
 public class BrandTest {
     @Test
     public void testSelectAll() throws Exception {
@@ -48,16 +49,16 @@ public class BrandTest {
         List<Brand> brands = new ArrayList<>();
         while(rs.next()) {
             int id = rs.getInt("id");
-            String brand_name = rs.getString("brand_name");
-            String company_name = rs.getString("company_name");
+            String brandName = rs.getString("brand_name");
+            String companyName = rs.getString("company_name");
             int ordered = rs.getInt("ordered");
             String description = rs.getString("description");
             int status = rs.getInt("status");
             brand = new Brand();
 
             brand.setId(id);
-            brand.setBrandName(brand_name);
-            brand.setCompanyName(company_name);
+            brand.setBrandName(brandName);
+            brand.setCompanyName(companyName);
             brand.setOrdered(ordered);
             brand.setDescription(description);
             brand.setStatus(status);
